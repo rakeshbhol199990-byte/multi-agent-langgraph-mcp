@@ -102,7 +102,13 @@ Visit [http://localhost:8000/docs](http://localhost:8000/docs) to test `/execute
 
 ---
 
+## 🛡️ License & Deployment Notes
+This project is licensed under the MIT License. Built for production orchestration with LangGraph, MCP protocol servers, and FastAPI endpoints.
+
+---
+
 ## 👤 Author & Architecture Lead
 * **Rakesh Kumar Bhol** — Senior AI Architect & GenAI Engineer
 * LinkedIn: [linkedin.com/in/rakeshbhol](https://linkedin.com/in/rakeshbhol)
 * Email: [rakeshbhol1995@gmail.com](mailto:rakeshbhol1995@gmail.com)
+
