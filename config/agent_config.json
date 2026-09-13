@@ -1,0 +1,29 @@
+{
+  "system_name": "Multi-Agent Autonomous Supervisor System",
+  "supervisor": {
+    "default_model": "gpt-4o",
+    "routing_strategy": "dynamic_intent_classification"
+  },
+  "agents": [
+    {
+      "name": "CoderAgent",
+      "role": "Python & FastAPI Code Generation",
+      "schema_enforcement": "Pydantic / Outlines"
+    },
+    {
+      "name": "DatabaseAgent",
+      "role": "SQL Query Execution & Database Operations",
+      "requires_hitl": true
+    },
+    {
+      "name": "CRAGWebSearchAgent",
+      "role": "Corrective RAG Web Search Fallback",
+      "confidence_threshold": 0.70
+    }
+  ],
+  "mcp_protocol": {
+    "version": "1.0",
+    "transport": "stdio/sse",
+    "tools_enabled": ["code_executor", "sql_runner", "web_search"]
+  }
+}

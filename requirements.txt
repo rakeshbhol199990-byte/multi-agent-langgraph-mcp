@@ -1,0 +1,7 @@
+langgraph>=0.0.30
+langchain>=0.1.0
+pydantic>=2.0.0
+fastapi>=0.100.0
+uvicorn>=0.22.0
+dspy-ai>=2.4.0
+outlines>=0.0.30
