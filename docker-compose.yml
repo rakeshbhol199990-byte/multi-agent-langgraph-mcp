@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  langgraph-mcp-agent:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - MCP_PORT=8000
+    volumes:
+      - agent_state:/app/state
+
+volumes:
+  agent_state:
